@@ -102,11 +102,10 @@
         .pic2{
             position: absolute;
             z-index: 30;
-            top: 50%;
+            top: 62%;
             left: 50px;
             height: 50%;
             width: 400px;
-            background-color: grey;
         }
 
         .write{
@@ -130,6 +129,21 @@
             text-align: center;
         }
 
+        .walk{
+            width: 100%;
+        }
+
+        .game{
+            width: 100%;
+        }
+
+        .quest{
+            text-align: center;
+        }
+
+        label{
+            margin-left: 160px;
+        }
     </style>
 </head>
 
@@ -154,7 +168,7 @@
     <div class="box1">
         <div class="box2">
             <div class="box3" style="background: #BDBDBD;">
-                <img class="profile" src="{% static 'profile.png' %}">
+                <img class="profile" src="{% static 'profile.png'%}" alt ="">
             </div>
             <br>
             <p>
@@ -189,16 +203,24 @@
                     <img class="walk" src="{% static 'walk.png' %}" alt="">
                 </div>
                 <div class= "pic2">
-                    <img src="{% static 'lol.png'%}" alt="">
+                    <img class="game" src="{% static 'game.jpg'%}" alt="">
                 </div>
                 <div class = "write">
                     <h3><center><b>제 취미는요...</b></center></h3>
-                    <br>
-                    <p><br>
+                    <br><br>
+                    <p>
                         <h5>1. 산책하기</h5>
-                        <br><br><br><br><br>
+                        <center>산책 좋아하시나요?</center>
+                        <label><input type="radio" name="walkLike" value="호">호
+                            &nbsp
+                        <input type="radio" name="walkLike" value="불호">불호</label>
+                        <br><br><br><br>
                         <h5>2. 게임하기</h5>
-                        <br>                        
+                        <center>게임 좋아하시나요?</center>
+                        <label><input type="radio" name="gameLike" value="호">호
+                            &nbsp
+                        <input type="radio" name="gameLike" value="불호">불호</label>
+                        <br><br>                        
                     </p>
                 </div>
             </div>

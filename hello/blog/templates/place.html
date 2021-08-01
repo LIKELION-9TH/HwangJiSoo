@@ -92,11 +92,10 @@
         .album1{
             position: absolute;
             z-index: 30;
-            top: 0px;
+            top: 50px;
             left: 50px;
             height: 100%;
             width: 400px;
-            background-color: lightslategrey;
         }
 
         .album2{
@@ -122,6 +121,10 @@
         .album2 > h5{
             line-height: 50px;
             text-align: center;
+        }
+
+        .swiss{
+            width: 100%;
         }
 
 
@@ -181,7 +184,7 @@
             <h1><b>PLACE</b></h1>
             <div class = "first">
                 <div class= "album1">
-                    <img src="{% static 'swiss.png'%}" alt="">
+                    <img class="swiss" src="{% static 'swiss.png'%}" alt="">
                 </div>
                 <div class = "album2">
                     <h3><b>가장 좋아하는 곳</b></h3>

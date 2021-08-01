@@ -93,10 +93,9 @@
             position: absolute;
             z-index: 30;
             top: 0px;
-            left: 50px;
+            left: 55px;
             height: 100%;
             width: 400px;
-            background-color: lightslategrey;
         }
 
         .album2{
@@ -122,6 +121,10 @@
         .album2 > h5{
             line-height: 50px;
             text-align: center;
+        }
+
+        .paris{
+            width:95%;
         }
     </style>
 </head>
@@ -179,7 +182,7 @@
             <h1><b>PICTURES</b></h1>
             <div class = "first">
                 <div class= "album1">
-                    <img src="{% static 'paris.png'%}" alt="">
+                    <img class="paris" src="{% static 'paris.png'%}" alt="">
                 </div>
                 <div class = "album2">
                     <h3><b>좋아하는 사진</b></h3>
